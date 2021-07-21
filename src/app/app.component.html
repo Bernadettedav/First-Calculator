@@ -1,0 +1,44 @@
+<input type="text" placeholder="first number goes here" #firstNumber />
+<input type = "text" placeholder="second number goes here" #secondNumber>
+<button class="btn btn-primary" (click)="calculatorService.divide(+firstNumber.value, +secondNumber.value)">/</button>
+<button class="btn btn-primary" (click)="calculatorService.multiply(+firstNumber.value, +secondNumber.value)">*</button>
+<button class="btn btn-primary" (click)="calculatorService.subtract(+firstNumber.value, +secondNumber.value)">-</button>
+<button class="btn btn-primary" (click)="calculatorService.add(+firstNumber.value, +secondNumber.value)">+</button>
+<p>the result is : {{calculatorService.result}}</p>
+
+<!-- <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button> -->
+
+<!-- </div> -->
+<!-- <div class="container">
+  <div class="row justify-content-md-center">
+    <div id= "num1" class="col col-lg-4">
+      <button class="btn btn-primary" (click)="numberSeven(input)">Seven</button>
+      <button class="btn btn-primary" (click)="numberEight()">Eight</button>
+      <button class="btn btn-primary" (click)="numberNine()">Nine</button>
+      <button class="btn btn-primary" (click)="divide()">%</button>
+  
+      <div class="row justify-content-md-center">
+        <button class="btn btn-primary" (click)="numberFour()">Four</button>
+        <button class="btn btn-primary" (click)="numberFive()">Five</button>
+        <button class="btn btn-primary" (click)="numberSix()">Six</button>
+        <button class="btn btn-primary" (click)="multiplying()">*</button>
+     
+      <div class="row justify-content-md-center"></div>
+        <button class="btn btn-primary" (click)="numberOne()">One</button>
+        <button class="btn btn-primary" (click)="numberTwo()">Two</button>
+        <button class="btn btn-primary" (click)="numberThree()">Three</button>
+        <button class="btn btn-primary" (click)="minus()">-</button>
+        <div class="row justify-content-md-center"></div>
+        <button class="btn btn-primary" (click)="numberZero()">Zero</button>
+        <button class="btn btn-primary" (click)="equal()">=</button>
+        <button class="btn btn-primary" (click)="adding()">+</button>
+      <div class="row justify-content-md-center"></div>
+        <p>your results is = {{ result }}</p>
+        <output name="result" for="a b">60</output>
+      </div>
+    </div>
+  </div>
+</div> -->
